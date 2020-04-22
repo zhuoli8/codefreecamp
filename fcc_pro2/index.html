@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = 'stylesheet' href = 'style.css'>
+</head>
+<body>
+    <header>
+        <h1 id = 'title'>title</h1>
+        <p id = 'description'>Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <main id = 'main'>
+        <form id = 'survey-form'>
+
+            <div id = 'textboxes'>
+                <!--need to add required to all-->
+                <label class = 'text-label' for = 'name'>Name</label>
+                <input class = 'rounding' id = 'name' type="text" placeholder = 'Enter your name' required>
+                <label class = 'text-label' for = 'email'>Email</label>
+                <input class = 'rounding'id = 'email' type="email" placeholder = 'Enter your Email' required>
+                <label class = 'text-label' for = 'age'>Age (optional)</label>
+                <!-- the age box needs type, min -->
+                <input class = 'rounding' id = 'number' type="number" placeholder = 'Age' min = '10' max = '200' required>
+            </div>
+
+            <div id = 'radios'>
+                <p class = 'questions'>Questions with radio answers:</p>
+                <label for="definitely"> 
+                    <input class = 'radio-button' id="definitely" type="radio" name="definitely-maybe-notsure">Definitley 
+                </label>
+                <label for="maybe"> 
+                    <input class = 'radio-button' id="maybe" type="radio" name="definitely-maybe-notsure">Maybe
+                </label>
+                <label for="notsure"> 
+                    <input class = 'radio-button' id="notsure" type="radio" name="definitely-maybe-notsure">Not sure
+                </label>
+            </div>
+
+            <div id = 'dropdown'>
+                <select class = 'rounding' id = 'selecter'>
+                    <option value = '0'>Select an option</option>
+                    <option value = '1'>11111</option>
+                    <option value = '2'>22222</option>
+                    <option value = '3'>33333</option>
+                </select>
+            </div>
+            
+            <div id = 'checkboxes'>
+                <p class = 'questions'>Questions for check boxes:</p>
+                <label for="frontend">
+                    <input id="frontend" type="checkbox" name="imporvements">Front-end Projects
+                </label>
+                <label for="backend">
+                    <input id="backend" type="checkbox" name="imporvements">Back-end Projects
+                </label>
+                <label for="datavisual">
+                    <input id="datavisual" type="checkbox" name="imporvements">Data Visualization
+                </label>
+                <label for="challenges">
+                    <input id="challenges" type="checkbox" name="imporvements">Challenges
+                </label>
+                <label for="opensource">
+                    <input id="opensource" type="checkbox" name="imporvements">Open Source Community
+                </label>
+            </div>
+
+            <div id = 'comments'>
+                <textarea id = 'comment-box' rows="4"></textarea>
+            </div>
+        
+            <div id = 'button'>
+                <input id = 'submit' type = 'submit' value = 'submit'/>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
